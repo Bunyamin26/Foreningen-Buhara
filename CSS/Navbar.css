@@ -1,12 +1,16 @@
-@import url('https://fonts.cdnfonts.com/css/gg-sans-2');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 body {
     margin:0;
     padding:0;
     overflow-x: hidden;
-    font-family: 'gg sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
 
+}
+
+a{
+    margin: 0;
+    padding: 0;
 }
 
 .nav-container{
@@ -49,6 +53,7 @@ background:none;
     position: relative;
     cursor: pointer;
     color: white;
+    font-weight: 500;
 }
 
 .nav-items {
@@ -60,7 +65,7 @@ position: absolute;
     flex-direction: column;
     top: 70%;
     left: 0;
-    width: 150%; 
+    width: 200%; 
     border-radius: 2px;
     text-align: center;
     padding: 5px;
@@ -104,6 +109,13 @@ padding-top: 10px;
 padding-bottom: 10px;
 border-radius: 100px;
 color: white !important;
+transition: 0.2s ease-in-out;
+font-weight: bold;
+}
+
+.nav-action:hover{
+    background-color: #007b8c;
+
 }
 
 .section{
@@ -113,4 +125,8 @@ color: white !important;
 
 .startpage{
     background-color: #215960;
+}
+
+.nav-list a:hover, .nav-list p:hover{
+    color: #acacac;
 }
